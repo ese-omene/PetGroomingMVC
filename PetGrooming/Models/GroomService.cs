@@ -8,8 +8,15 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PetGrooming.Models
 {
-    public class GroomService
+    public class GroomService      
     {
+
+        [Key]
+        public int GroomServiceID { get; set; } // primary key
+        public string GroomServiceName { get; set; } // Name of service
+        public double GroomServicePrice { get; set; } // Price of service
+        public int GroomServiceDuratoin { get; set; } // how long the service will take
+
         /*
             A GroomService is a type of activity that a Groomer can do for a pet. Some examples might be nail clipping, shampoo, trim, etc.
             

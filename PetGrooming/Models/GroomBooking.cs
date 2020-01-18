@@ -5,6 +5,8 @@ using System.Web;
 //Install  entity framework 6 on Tools > Manage Nuget Packages > Microsoft Entity Framework (ver 6.4)
 using System.Data.Entity;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 
 namespace PetGrooming.Models
 {
@@ -24,5 +26,21 @@ namespace PetGrooming.Models
                 - A list of GroomServices
                 
         */
+
+        [Key]
+        public int GroomBookingID { get; set; }  //primary key
+
+        public string GroomBookingDate { get; set; } //date for grooming service
+        public int GroomBookingTime { get; set; } // time for grooming service
+        public double GroomBookingPrice { get; set; } // price for grooming service
+
+        /*
+         will need to add the foreign keys for 
+         Groomer - since each booking needs a groomer
+         GroomService - each booking can have multiple services
+         Pet - you need to know which pet is getting groomed
+         Owner - the owner is needed to know who to bill
+         */
+
     }
 }
