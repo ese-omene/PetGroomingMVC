@@ -30,6 +30,7 @@ namespace PetGrooming.Models
         public string OwnerFirstName { get; set; } // first name of pet owner
         public string OwnerLastName { get; set; } // last nameof pet owner
         public int  OwnerPhone { get; set; } // contact info for owner - phone number
+                                             // only going with one phone number since majority of the people I talked to only have mobile phones
         public string OwnerEmail { get; set; } // contact info for owner - email
 
         /* will add in foreign key for 

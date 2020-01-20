@@ -31,7 +31,7 @@ namespace PetGrooming.Models
         public int GroomBookingID { get; set; }  //primary key
 
         public string GroomBookingDate { get; set; } //date for grooming service
-        public int GroomBookingTime { get; set; } // time for grooming service
+        public DateTime GroomBookingTime { get; set; } // time for grooming service
         public double GroomBookingPrice { get; set; } // price for grooming service
 
         /*

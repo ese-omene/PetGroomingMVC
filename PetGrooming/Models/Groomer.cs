@@ -28,9 +28,10 @@ namespace PetGrooming.Models
         public int GroomerID { get; set; } //primary key
         public string GroomerFirstName { get; set; } // name of groomer (employee)
         public string GroomerLastName { get; set; } // last name of groomer (employee)
-        public int GroomerPhone { get; set; } // contact info for groomer if you need to contact them
+        public int GroomerPhone { get; set; } // contact info for groomer if you need to contact them,
+        // only going with one phone number since majority of the people I talked to only have mobile phones
         public double GroomerRate { get; set; } // rate for groomer, different groomers might have different rates
-        public string GroomerDOB { get; set; } // date of birth for groomer, to have a complete profile for each groomer
+        public DateTime GroomerDOB { get; set; } // date of birth for groomer, to have a complete profile for each groomer
          /*
          will need to add Groom Services as foreign key - each groomer can do different services
          
